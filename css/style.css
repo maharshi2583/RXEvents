@@ -5,12 +5,9 @@
 body {
   font-family: mainText, sans-serif;
   letter-spacing: 1.2px;
+  color: #1a1a1a;
 }
 
-@font-face {
-  font-family: mainText;
-  src: url(../fonts/Libertad-Regular.otf);
-}
 #subHeader {
   background-color: #f26642;
 }
@@ -39,6 +36,27 @@ body {
   transition: width 0.3s ease, opacity 0.3s ease;
 }
 .white-underline:hover::after {
+  width: 100%;
+  opacity: 0.9;
+}
+
+.orange-underline {
+  position: relative;
+}
+.orange-underline::after {
+  bottom: -4px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #f26642;
+  opacity: 0.6;
+  width: 0;
+  transform: translateX(-50%);
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
+.orange-underline:hover::after {
   width: 100%;
   opacity: 0.9;
 }
@@ -122,6 +140,73 @@ input[type=checkbox]:checked ~ .hamburger-lines .line3 {
 .bookADemo:hover {
   border-color: #f26642;
   color: #f26642 !important;
+}
+
+.navbar .navbar-nav ul {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  transition: 0.3s all ease-in-out;
+  list-style-type: none;
+  background-color: #ffffff;
+}
+
+.navbar .navbar-nav li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+
+#footer {
+  border-top: 2px solid #f26642;
+}
+
+.footer-about {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-about li a {
+  transition: 0.3s all ease-in;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+.footer-about li a:hover {
+  color: #f26642;
+}
+
+#followUs li {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all ease-in;
+}
+#followUs li a {
+  color: #1a1a1a;
+  margin-left: 1px;
+  transition: 0.3s all ease-in;
+}
+#followUs li:hover {
+  border-color: #f26642;
+  background-color: #f26642;
+}
+#followUs li:hover a {
+  color: #ffffff;
+}
+#followUs li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-contact {
+  color: #1a1a1a;
+  transition: 0.3s all ease-in;
+}
+.footer-contact:hover {
+  color: #f26642;
 }
 
 .btn-main {

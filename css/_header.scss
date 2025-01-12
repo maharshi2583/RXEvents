@@ -42,6 +42,10 @@
     @include underline($cream);
 }
 
+.orange-underline {
+    @include underline($orange);
+}
+
 #mainNavbar {
     .nav-link {
         color: $blackish;
@@ -124,4 +128,20 @@ input[type="checkbox"]:checked~.hamburger-lines .line3 {
         border-color: $orange;
         color: $orange !important;
     }
+}
+
+.navbar .navbar-nav ul {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    // top: 65px;
+    transition: .3s all ease-in-out;
+    list-style-type: none;
+    background-color: $white
+}
+
+.navbar .navbar-nav li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
 }

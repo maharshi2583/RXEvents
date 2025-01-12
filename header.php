@@ -2,15 +2,15 @@
     <div class="row px-2 px-md-5">
         <div class="col-md-6">
             <div class="d-flex">
-                <a href="" class="mx-2 fs-5 social-links"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="" class="mx-2 fs-5 social-links"><i class="fa-brands fa-square-x-twitter"></i></a>
-                <a href="" class="mx-2 fs-5 social-links"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="" class="mx-2 fs-5 social-links"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#" class="mx-2 fs-5 social-links"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#" class="mx-2 fs-5 social-links"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="#" class="mx-2 fs-5 social-links"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="mx-2 fs-5 social-links"><i class="fa-brands fa-square-instagram"></i></a>
             </div>
         </div>
         <div class="col-md-6 d-flex align-items-center justify-content-end">
-            <a href="" class="me-4 text-decoration-none social-links white-underline">Image Consulting</a>
-            <a href="" class="text-decoration-none social-links white-underline">Rx-Tv</a>
+            <a href="#" class="me-4 text-decoration-none social-links white-underline">Image Consulting</a>
+            <a href="#" class="text-decoration-none social-links white-underline">Rx-Tv</a>
         </div>
 
     </div>
@@ -21,8 +21,8 @@
     <div class="container-fluid px-4">
         <a class="navbar-brand" href="#"><img src="images/rxTransparentLogo.png" class="py-0" height="80"
                 alt="logo"></a>
-        <button class="navbar-toggler order-1 order-xl-0 position-relative" type="button" data-bs-toggle="collapse"
-            data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+        <button class="navbar-toggler order-1 order-xl-0 position-relative border-0" type="button"
+            data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
             aria-label="Toggle navigation">
             <input type="checkbox" name="" id="">
             <div class="hamburger-lines">
@@ -33,29 +33,49 @@
         </button>
         <div class="collapse navbar-collapse order-1 order-xl-0" id="mainNavbar">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-xl-center">
-                <li class="nav-item mx-lg-2">
+                <li class="nav-item mx-xl-2">
                     <a class="nav-link text-uppercase" href="index.php">Home</a>
                 </li>
-                <li class="nav-item mx-lg-2">
-                    <a class="nav-link text-uppercase" href="aboutus.php">About Us</a>
+                <li class="nav-item mx-xl-2">
+                    <a class="nav-link text-uppercase" href="#">About Us</a>
                 </li>
-                <li class="nav-item mx-lg-2">
-                    <a class="nav-link text-uppercase" href="committee.php">Services</a>
+                <li class="nav-item mx-xl-2 services">
+                    <a href="#" class="nav-link text-uppercase">Services <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="shadow-lg p-4">
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Physical
+                                Conference</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Virtual
+                                Conference</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Hybrid
+                                Conference</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Speaker
+                                Presentation</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Content
+                                Writing</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Image
+                                Consulting</a></li>
+                    </ul>
                 </li>
-                <li class="nav-item mx-lg-2">
-                    <a class="nav-link text-uppercase" href="internationalFaculties.php">Gallery</a>
+                <li class="nav-item mx-xl-2">
+                    <a class="nav-link text-uppercase" href="#">Gallery</a>
                 </li>
-                <li class="nav-item mx-lg-2">
-                    <a class="nav-link text-uppercase" href="sponsorship.php">Events</a>
+                <li class="nav-item mx-xl-2">
+                    <a href="#" class="nav-link text-uppercase">Events <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="shadow-lg p-4">
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Physical
+                                Conference</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Virtual
+                                Conference</a></li>
+                    </ul>
                 </li>
-                <li class="nav-item mx-lg-2">
-                    <a class="nav-link text-uppercase" href="scientific.php">Resources</a>
+                <li class="nav-item mx-xl-2">
+                    <a class="nav-link text-uppercase" href="#">Resources</a>
                 </li>
-                <li class="nav-item mx-lg-2">
-                    <a class="nav-link text-uppercase" href="accommodation.php">Contact Us</a>
+                <li class="nav-item mx-xl-2">
+                    <a class="nav-link text-uppercase" href="#">Contact Us</a>
                 </li>
-                <li class="nav-item mx-lg-2">
-                    <a class="nav-link text-uppercase btn btn-main px-3 bookADemo" href="contactus.php">Book
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase btn btn-main px-3 bookADemo" href="#">Book
                         A Demo</a>
                 </li>
             </ul>

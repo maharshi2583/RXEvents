@@ -1,11 +1,18 @@
 @import 'variable';
 
+@font-face {
+    font-family: mainText;
+    src: url(../fonts/Libertad-Regular.otf);
+}
+
 body {
     font-family: mainText, sans-serif;
     letter-spacing: 1.2px;
+    color: $blackish;
 }
 
 @import 'header';
+@import 'footer';
 
 .btn-main {
     padding: 12px 16px;
