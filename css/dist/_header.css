@@ -1,0 +1,115 @@
+@font-face {
+  font-family: mainText;
+  src: url(../fonts/Libertad-Regular.otf);
+}
+#subHeader {
+  background-color: #f26642;
+}
+#subHeader .social-links {
+  color: #ffffff;
+  transition: 0.3s all ease-in;
+}
+#subHeader .social-links:hover {
+  color: #ffece5;
+}
+
+.white-underline {
+  position: relative;
+}
+.white-underline::after {
+  bottom: -4px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #ffece5;
+  opacity: 0.6;
+  width: 0;
+  transform: translateX(-50%);
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
+.white-underline:hover::after {
+  width: 100%;
+  opacity: 0.9;
+}
+
+#mainNavbar .nav-link {
+  color: #1a1a1a;
+}
+#mainNavbar .nav-link:hover {
+  color: #f26642;
+}
+
+input[type=checkbox],
+.hamburger-lines {
+  display: block;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 30px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.hamburger-lines {
+  display: block;
+  height: 28px;
+  width: 35px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #333;
+}
+
+.hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+input[type=checkbox]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+input[type=checkbox]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+input[type=checkbox]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+input[type=checkbox]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.bookADemo {
+  border: 1px solid transparent;
+  color: #ffffff !important;
+  width: fit-content;
+}
+.bookADemo:hover {
+  border-color: #f26642;
+  color: #f26642 !important;
+}
