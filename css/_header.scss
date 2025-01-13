@@ -7,7 +7,8 @@
         color: $white;
         transition: .3s all ease-in;
 
-        &:hover {
+        &:hover,
+        &:focus {
             color: $cream;
         }
     }
@@ -32,7 +33,8 @@
         transition: width 0.3s ease, opacity 0.3s ease;
     }
 
-    &:hover::after {
+    &:hover::after,
+    &:focus::after {
         width: 100%;
         opacity: 0.9
     }
@@ -50,7 +52,8 @@
     .nav-link {
         color: $blackish;
 
-        &:hover {
+        &:hover,
+        &:focus {
             color: $orange;
         }
     }
@@ -124,7 +127,8 @@ input[type="checkbox"]:checked~.hamburger-lines .line3 {
     color: $white !important;
     width: fit-content;
 
-    &:hover {
+    &:hover,
+    &:focus {
         border-color: $orange;
         color: $orange !important;
     }
@@ -140,7 +144,8 @@ input[type="checkbox"]:checked~.hamburger-lines .line3 {
     background-color: $white
 }
 
-.navbar .navbar-nav li:hover>ul {
+.navbar .navbar-nav li:hover>ul,
+.navbar .navbar-nav li:focus>ul {
     opacity: 1;
     visibility: visible;
     z-index: 10;

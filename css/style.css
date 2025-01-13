@@ -5,6 +5,7 @@
 body {
   font-family: mainText, sans-serif;
   letter-spacing: 1.2px;
+  line-height: 1.8rem;
   color: #1a1a1a;
 }
 
@@ -15,7 +16,7 @@ body {
   color: #ffffff;
   transition: 0.3s all ease-in;
 }
-#subHeader .social-links:hover {
+#subHeader .social-links:hover, #subHeader .social-links:focus {
   color: #ffece5;
 }
 
@@ -35,7 +36,7 @@ body {
   transform: translateX(-50%);
   transition: width 0.3s ease, opacity 0.3s ease;
 }
-.white-underline:hover::after {
+.white-underline:hover::after, .white-underline:focus::after {
   width: 100%;
   opacity: 0.9;
 }
@@ -56,7 +57,7 @@ body {
   transform: translateX(-50%);
   transition: width 0.3s ease, opacity 0.3s ease;
 }
-.orange-underline:hover::after {
+.orange-underline:hover::after, .orange-underline:focus::after {
   width: 100%;
   opacity: 0.9;
 }
@@ -64,7 +65,7 @@ body {
 #mainNavbar .nav-link {
   color: #1a1a1a;
 }
-#mainNavbar .nav-link:hover {
+#mainNavbar .nav-link:hover, #mainNavbar .nav-link:focus {
   color: #f26642;
 }
 
@@ -137,7 +138,7 @@ input[type=checkbox]:checked ~ .hamburger-lines .line3 {
   width: -moz-fit-content;
   width: fit-content;
 }
-.bookADemo:hover {
+.bookADemo:hover, .bookADemo:focus {
   border-color: #f26642;
   color: #f26642 !important;
 }
@@ -151,7 +152,8 @@ input[type=checkbox]:checked ~ .hamburger-lines .line3 {
   background-color: #ffffff;
 }
 
-.navbar .navbar-nav li:hover > ul {
+.navbar .navbar-nav li:hover > ul,
+.navbar .navbar-nav li:focus > ul {
   opacity: 1;
   visibility: visible;
   z-index: 10;
@@ -171,7 +173,7 @@ input[type=checkbox]:checked ~ .hamburger-lines .line3 {
   color: #1a1a1a;
   font-size: 14px;
 }
-.footer-about li a:hover {
+.footer-about li a:hover, .footer-about li a:focus {
   color: #f26642;
 }
 
@@ -190,11 +192,11 @@ input[type=checkbox]:checked ~ .hamburger-lines .line3 {
   margin-left: 1px;
   transition: 0.3s all ease-in;
 }
-#followUs li:hover {
+#followUs li:hover, #followUs li:focus {
   border-color: #f26642;
   background-color: #f26642;
 }
-#followUs li:hover a {
+#followUs li:hover a, #followUs li:focus a {
   color: #ffffff;
 }
 #followUs li:not(:last-child) {
@@ -205,7 +207,7 @@ input[type=checkbox]:checked ~ .hamburger-lines .line3 {
   color: #1a1a1a;
   transition: 0.3s all ease-in;
 }
-.footer-contact:hover {
+.footer-contact:hover, .footer-contact:focus {
   color: #f26642;
 }
 
@@ -214,4 +216,93 @@ input[type=checkbox]:checked ~ .hamburger-lines .line3 {
   border-radius: 5px;
   background-color: #f26642;
   color: #ffffff;
+}
+.btn-main:hover, .btn-main:focus {
+  background-color: #ffffff;
+  color: #f26642;
+}
+
+.btn-outline-main {
+  padding: 12px 16px;
+  border-radius: 5px;
+  background-color: #f26642;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.btn-outline-main:hover, .btn-outline-main:focus {
+  background-color: #ffffff;
+  color: #f26642;
+}
+
+.mainheading {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f26642;
+}
+
+#requestProposal .accordion-button,
+#requestProposal .accordion-collapse {
+  background-color: #f26642;
+  color: #ffffff;
+}
+#requestProposal .accordion-button {
+  font-size: 2rem;
+  font-weight: bolder;
+  letter-spacing: 1.3px;
+  outline: none;
+  box-shadow: none;
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+#requestProposal .accordion-button::after {
+  display: none;
+}
+#requestProposal #open {
+  background: #ffffff;
+  height: 4.5px;
+  width: 20px;
+  position: relative;
+  float: right;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+#requestProposal #closed {
+  background: #ffffff;
+  height: 20px;
+  position: absolute;
+  width: 4px;
+  top: -7px;
+  left: 8.1px;
+  border-radius: 15px;
+  transition: 0.1s opacity ease-in-out;
+}
+#requestProposal .accordion-button:not(.collapsed) #closed {
+  opacity: 0;
+}
+#requestProposal .accordion-collapse {
+  border-top: 1px solid #ffffff;
+}
+
+#flush-collapseOne .form-floating input,
+#flush-collapseOne .form-floating select,
+#flush-collapseOne .form-floating textarea {
+  box-shadow: none;
+}
+#flush-collapseOne .form-floating textarea {
+  resize: none !important;
+}
+#flush-collapseOne .form-floating label {
+  color: #1a1a1a;
+}
+
+.parallax {
+  background: url("../images/ourservicesbg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-inner {
+  padding-top: 10%;
+  padding-bottom: 10%;
 }/*# sourceMappingURL=style.css.map */

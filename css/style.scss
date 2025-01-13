@@ -8,6 +8,7 @@
 body {
     font-family: mainText, sans-serif;
     letter-spacing: 1.2px;
+    line-height: 1.8rem;
     color: $blackish;
 }
 
@@ -19,4 +20,115 @@ body {
     border-radius: 5px;
     background-color: $orange;
     color: $white;
+
+    &:hover,
+    &:focus {
+        background-color: $white;
+        color: $orange;
+    }
+}
+
+.btn-outline-main {
+    padding: 12px 16px;
+    border-radius: 5px;
+    background-color: $orange;
+    color: $white;
+    border: 1px solid $white;
+
+    &:hover,
+    &:focus {
+        background-color: $white;
+        color: $orange;
+    }
+}
+
+.mainheading {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $orange;
+}
+
+//! index.html
+
+#requestProposal {
+
+    .accordion-button,
+    .accordion-collapse {
+        background-color: $orange;
+        color: $white;
+    }
+
+    .accordion-button {
+        font-size: 2rem;
+        font-weight: bolder;
+        letter-spacing: 1.3px;
+        outline: none;
+        box-shadow: none;
+        flex-direction: row-reverse;
+        justify-content: start;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    #open {
+        background: $white;
+        height: 4.5px;
+        width: 20px;
+        position: relative;
+        float: right;
+        border-radius: 15px;
+        margin-right: 10px;
+    }
+
+    #closed {
+        background: $white;
+        height: 20px;
+        position: absolute;
+        width: 4.0px;
+        top: -7px;
+        left: 8.1px;
+        border-radius: 15px;
+        transition: .1s opacity ease-in-out;
+    }
+
+    .accordion-button:not(.collapsed) #closed {
+        opacity: 0;
+    }
+
+    .accordion-collapse {
+        border-top: 1px solid $white;
+    }
+}
+
+#flush-collapseOne {
+    .form-floating {
+
+        input,
+        select,
+        textarea {
+            box-shadow: none;
+        }
+
+        textarea {
+            resize: none !important;
+        }
+
+        label {
+            color: $blackish;
+        }
+    }
+}
+
+.parallax {
+    background: url('../images/ourservicesbg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-inner {
+    padding-top: 10%;
+    padding-bottom: 10%;
 }

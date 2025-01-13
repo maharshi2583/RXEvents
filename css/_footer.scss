@@ -14,7 +14,8 @@
         color: $blackish;
         font-size: 14px;
 
-        &:hover {
+        &:hover,
+        &:focus {
             color: $orange;
         }
     }
@@ -37,7 +38,8 @@
             transition: .3s all ease-in;
         }
 
-        &:hover {
+        &:hover,
+        &:focus {
             border-color: $orange;
             background-color: $orange;
 
@@ -56,7 +58,8 @@
     color: $blackish;
     transition: .3s all ease-in;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $orange;
     }
 }
