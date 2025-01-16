@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -152,10 +154,226 @@
     <!-- services -->
     <section class="container-fluid p-0">
         <section class="parallax">
-            <div class="parallax-inner">
-
+            <div class="parallax-inner py-5">
+                <div class="container">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <h1 class="mainheading">OUR SERVICES</h1>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center justify-content-end">
+                            <a href="#" class="btn btn-animated-main"><span>Get in touch</span></a>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-3 g-md-4 g-lg-5">
+                        <div class="col mb-4 mb-md-0">
+                            <a href="#" class="card text-decoration-none">
+                                <div class="card-body p-5 our-service-card">
+                                    <div class="services-img mb-4">
+                                        <img src="images/virtual.png" alt="">
+                                    </div>
+                                    <h2 class="card-title text-uppercase mainheading mb-3">Virtual Conference</h2>
+                                    <p class="card-text text-uppercase mb-3">PUT YOUR CONGRESS IN THE HANDS OF THE
+                                        EXPERTS
+                                    </p>
+                                    <ul class="mb-0 ps-0">
+                                        <li>A-Z Event Management</li>
+                                        <li>Original Events</li>
+                                        <li>Virtual & Hybrid Events</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col mb-4 mb-md-0">
+                            <a href="#" class="card text-decoration-none">
+                                <div class="card-body p-5 our-service-card">
+                                    <div class="services-img mb-4">
+                                        <img src="images/physical.png" alt="">
+                                    </div>
+                                    <h2 class="card-title text-uppercase mainheading mb-3">Physical
+                                        Conference</h2>
+                                    <p class="card-text text-uppercase mb-3">PUT YOUR CONGRESS IN THE HANDS OF THE
+                                        EXPERTS
+                                    </p>
+                                    <ul class="mb-0 ps-0">
+                                        <li>A-Z Event Management</li>
+                                        <li>Original Events</li>
+                                        <li>Virtual & Hybrid Events</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col mb-4 mb-md-0">
+                            <a href="#" class="card text-decoration-none">
+                                <div class="card-body p-5 our-service-card">
+                                    <div class="services-img mb-4">
+                                        <img src="images/hybrid.png" alt="">
+                                    </div>
+                                    <h2 class="card-title text-uppercase mainheading mb-3">Hybrid
+                                        Conference</h2>
+                                    <p class="card-text text-uppercase mb-3">PUT YOUR CONGRESS IN THE HANDS OF THE
+                                        EXPERTS
+                                    </p>
+                                    <ul class="mb-0 ps-0">
+                                        <li>A-Z Event Management</li>
+                                        <li>Original Events</li>
+                                        <li>Virtual & Hybrid Events</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+    </section>
+
+    <!-- our history -->
+    <section class="container-fluid px-0 py-5" id="our-history">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0 d-flex">
+                    <i class="fa-solid fa-angles-right text-white fs-1 me-3"></i>
+                    <div class="px-3">
+                        <h3>OUR HISTORY</h3>
+                        <p>With 59 years of experience and market expertise we are at the global forefront of
+                            association and conference
+                            management.</p>
+                        <a href="#" class="btn btn-outline-main">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0 d-flex">
+                    <i class="fa-solid fa-angles-right text-white fs-1 me-3"></i>
+                    <div class="px-3">
+                        <h3>VIRTUAL SOLUTIONS</h3>
+                        <p>Keep up to date with our Empowering Knowledge Newsletter. Read about the latest news,
+                            solutions and developments of
+                            Kenes Group.</p>
+                        <a href="#" class="btn btn-outline-main">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0 d-flex">
+                    <i class="fa-solid fa-angles-right text-white fs-1 me-3"></i>
+                    <div class="px-3">
+                        <h3>NEWSLETTER</h3>
+                        <p>Keep up to date with our Empowering Knowledge Newsletter. Read about the latest news,
+                            solutions and developments of
+                            Kenes Group.</p>
+                        <a href="#" class="btn btn-outline-main">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services counting -->
+    <section class="container py-5" id="services-counting">
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <h2>4,300</h2>
+                <p>CONFERENCES</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <h2>200+</h2>
+                <p>VIRTUAL EVENTS</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <h2>60,000</h2>
+                <p>ASSOCIATION MEMBERS</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <h2>220,000</h2>
+                <p>DELEGATES PER YEAR</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- upcoming events -->
+    <section class="container-fluid px-0 py-5" id="upcoming-events">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h1 class="mainheading">Upcoming Events</h1>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-end">
+                    <a href="#" class="btn btn-animated-main"><span>See All Events</span></a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="carousel-wrap">
+                        <div class="owl-carousel">
+                            <div class="item">
+                                <div class='card card1'>
+                                    <div class="price">
+                                        <h6>$14</h6>
+                                    </div>
+                                    <div class='info text-white'>
+                                        <h1 class='title mx-3'>Chocolate Cake</h1>
+                                        <p class='description mx-3'>Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit,
+                                            sedii do
+                                            eiusmod teme.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class='card card1'>
+                                    <div class="price">
+                                        <h6>$14</h6>
+                                    </div>
+                                    <div class='info text-white'>
+                                        <h1 class='title mx-3'>Chocolate Cake</h1>
+                                        <p class='description mx-3'>Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit,
+                                            sedii do
+                                            eiusmod teme.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class='card card1'>
+                                    <div class="price">
+                                        <h6>$14</h6>
+                                    </div>
+                                    <div class='info text-white'>
+                                        <h1 class='title mx-3'>Chocolate Cake</h1>
+                                        <p class='description mx-3'>Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit,
+                                            sedii do
+                                            eiusmod teme.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class='card card1'>
+                                    <div class="price">
+                                        <h6>$14</h6>
+                                    </div>
+                                    <div class='info text-white'>
+                                        <h1 class='title mx-3'>Chocolate Cake</h1>
+                                        <p class='description mx-3'>Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit,
+                                            sedii do
+                                            eiusmod teme.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- follow us -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6"></div>
+        </div>
     </section>
 
     <!-- footer -->
@@ -167,6 +385,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
         </script>
+    <script src="owlcarousel/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        // carousel
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+        });
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            navText: [
+                '<i class="fa-solid fa-less-than"></i>',
+                '<i class="fa-solid fa-greater-than"></i>',
+            ],
+            autoplay: true,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 3,
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>

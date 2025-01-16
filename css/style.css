@@ -222,6 +222,61 @@ input[type=checkbox]:checked ~ .hamburger-lines .line3 {
   color: #f26642;
 }
 
+.btn-animated-main {
+  padding: 12px 16px;
+  border-radius: 5px;
+  background-color: #f26642;
+  color: #ffffff;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+  border: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.btn-animated-main span {
+  z-index: 5;
+  position: relative;
+  transition: color 350ms ease;
+}
+.btn-animated-main:hover, .btn-animated-main:focus {
+  box-shadow: 0 15px 35px rgba(237, 28, 36, 0.1490196078);
+}
+.btn-animated-main:hover span, .btn-animated-main:focus span {
+  color: #1a1a1a;
+}
+.btn-animated-main::after, .btn-animated-main::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #ffece5;
+  z-index: -1;
+}
+.btn-animated-main::before {
+  transform: translateX(-100%);
+  z-index: 1;
+}
+.btn-animated-main:hover:before, .btn-animated-main:focus:before {
+  transform: translateX(0);
+  transition: transform 350ms ease;
+}
+.btn-animated-main::after {
+  z-index: 0;
+  transform: translateX(100%);
+  transition: none;
+  transition: transform 350ms ease;
+}
+.btn-animated-main:hover:after, .btn-animated-main:focus:after {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 350ms 360ms ease;
+}
+
 .btn-outline-main {
   padding: 12px 16px;
   border-radius: 5px;
@@ -302,7 +357,117 @@ input[type=checkbox]:checked ~ .hamburger-lines .line3 {
   background-size: cover;
 }
 
-.parallax-inner {
-  padding-top: 10%;
-  padding-bottom: 10%;
+.our-service-card {
+  transition: 0.1s all ease-in;
+}
+.our-service-card .services-img {
+  height: 70px;
+  width: 70px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.our-service-card .services-img img {
+  width: 40px;
+  height: 40px;
+}
+.our-service-card ul {
+  list-style: none;
+}
+.our-service-card ul li {
+  position: relative;
+  padding-left: 2rem;
+  transition: 0.1s all ease-in;
+}
+.our-service-card ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  background: url("../images/right-arrow.svg") no-repeat center;
+  background-size: contain;
+  filter: invert(39%) sepia(74%) saturate(1200%) hue-rotate(7deg) brightness(94%) contrast(98%);
+}
+.our-service-card:hover, .our-service-card:focus {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.our-service-card:hover li, .our-service-card:focus li {
+  color: #f26642;
+}
+
+#our-history {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-bottom: 12rem !important;
+}
+#our-history:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f26642;
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  transform: scaleX(2);
+  z-index: -100;
+}
+#our-history h3,
+#our-history p {
+  color: #ffffff;
+}
+#our-history h3 {
+  font-weight: 800;
+}
+
+#services-counting {
+  color: #f26642;
+  background-color: #ffffff;
+  margin-top: -7rem;
+}
+#services-counting h2 {
+  font-weight: 900;
+  font-size: 3rem !important;
+}
+@media only screen and (max-width: 992px) {
+  #services-counting h2 {
+    font-size: 2rem !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #services-counting {
+    margin-top: -10rem;
+  }
+}
+
+#upcoming-events {
+  background-image: url("../images/team-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#upcoming-events .carousel-wrap {
+  position: relative;
+}
+#upcoming-events .carousel-wrap .owl-nav {
+  display: flex !important;
+  justify-content: space-between !important;
+  position: absolute;
+  width: 100%;
+  top: 40%;
+}
+#upcoming-events .carousel-wrap .owl-nav i {
+  font-size: 30px;
+}
+#upcoming-events .carousel-wrap .owl-nav .owl-prev {
+  margin-left: -2rem;
+}
+#upcoming-events .carousel-wrap .owl-nav .owl-next {
+  margin-right: -2rem;
 }/*# sourceMappingURL=style.css.map */
