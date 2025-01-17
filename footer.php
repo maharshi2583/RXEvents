@@ -47,3 +47,11 @@
         </div>
     </div>
 </footer>
+<div class="container-fluid p-3" id="copyright">
+    <div class="row">
+        <div class="col-12">
+            <p class="text-center mb-0">Copyrights © 2019-2024 Rx Events Private Limited. All Rights Reserved. | Managed
+                by <a href="#">Tech-IT solutions</a></p>
+        </div>
+    </div>
+</div>

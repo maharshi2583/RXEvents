@@ -49,3 +49,12 @@
 .footer-contact:hover, .footer-contact:focus {
   color: #f26642;
 }
+
+#copyright {
+  background-color: #f26642;
+  color: #ffffff;
+}
+#copyright a {
+  text-decoration: none;
+  color: #ffffff;
+}
