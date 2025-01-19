@@ -325,15 +325,16 @@ input[type=checkbox]:checked ~ .hamburger-lines .line3 {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  width: 70%;
   color: #f26642;
   padding: 0 10rem;
 }
 .hero-slider .carousel-cell .inner .subtitle {
-  font-size: 4rem;
+  font-size: 2rem;
   line-height: 1.2em;
   letter-spacing: 3px;
   color: #f26642;
-  margin-bottom: 5px;
+  margin-bottom: 2rem;
   font-weight: 100 !important;
 }
 .hero-slider .carousel-cell .inner .title {
@@ -341,8 +342,27 @@ input[type=checkbox]:checked ~ .hamburger-lines .line3 {
   line-height: 1.2em;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin-bottom: 40px;
   font-weight: 900;
+}
+.hero-slider .swiper-pagination {
+  text-align: right;
+  transform: translateX(-3%);
+}
+.hero-slider .swiper-pagination .swiper-pagination-bullet {
+  height: 15px;
+  width: 15px;
+  border-radius: 0;
+  background-color: #ffffff;
+  opacity: 0.5;
+}
+.hero-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #f26642;
+  opacity: 1;
+}
+@media only screen and (max-width: 992px) {
+  .hero-slider .carousel-cell .inner {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 650px) {
   .hero-slider .carousel-cell .inner {
@@ -354,10 +374,10 @@ input[type=checkbox]:checked ~ .hamburger-lines .line3 {
     padding: 0 3rem;
   }
   .hero-slider .carousel-cell .inner .subtitle {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .hero-slider .carousel-cell .inner .title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
