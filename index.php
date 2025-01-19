@@ -19,22 +19,24 @@
                 style="background-image:url(https://68.media.tumblr.com/57836ee52bc9355ad7c5fed5abf91ccc/tumblr_oiboo6MaRS1slhhf0o1_1280.jpg);">
                 <div class="overlay"></div>
                 <div class="inner">
-                    <h1 class="title">Best Technology</h1>
-                    <p class="subtitle">We adopt advanced technology for our projects to always
+                    <h1 class="title animated-text">Best Technology</h1>
+                    <p class="subtitle animated-text">We adopt advanced technology for our projects to always
                         remain a step ahead
                     </p>
-                    <a href="https://flickity.metafizzy.co/" target="_blank" class="btn btn-main">Read More</a>
+                    <a href="https://flickity.metafizzy.co/" target="_blank" class="btn btn-main animated-text">Read
+                        More</a>
                 </div>
             </div>
             <div class="carousel-cell swiper-slide"
                 style="background-image:url(https://68.media.tumblr.com/c40636a5a0d4aa39c335c8db40d2144f/tumblr_omc7z7Xv8N1slhhf0o1_1280.jpg);">
                 <div class="overlay"></div>
                 <div class="inner">
-                    <h1 class="title">Effective Communication</h1>
-                    <h3 class="subtitle">Building right communication strategies that delivers the
+                    <h1 class="title animated-text">Effective Communication</h1>
+                    <h3 class="subtitle animated-text">Building right communication strategies that delivers the
                         right message to your
                         audience</h3>
-                    <a href="https://flickity.metafizzy.co/" target="_blank" class="btn btn-main">Read More</a>
+                    <a href="https://flickity.metafizzy.co/" target="_blank" class="btn btn-main animated-text">Read
+                        More</a>
                 </div>
             </div>
         </div>
@@ -73,7 +75,7 @@
 
     <!-- services -->
     <section class="container-fluid p-0">
-        <section class="parallax">
+        <div class="parallax">
             <div class="parallax-inner py-5">
                 <div class="container">
                     <div class="row mb-4">
@@ -144,7 +146,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </section>
 
     <!-- our history -->

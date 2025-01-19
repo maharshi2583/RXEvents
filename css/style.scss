@@ -115,6 +115,10 @@ body {
     color: $orange;
 }
 
+.orangetext {
+    color: $orange;
+}
+
 //! index.html
 
 // carousel
@@ -161,6 +165,11 @@ body {
                 letter-spacing: 3px;
                 font-weight: 900;
             }
+
+            .animated-text {
+                opacity: 0; // Initially hidden
+                animation: fadeInLeft 1s ease-in-out forwards;
+            }
         }
     }
 
@@ -179,6 +188,18 @@ body {
         .swiper-pagination-bullet-active {
             background-color: $orange;
             opacity: 1;
+        }
+    }
+
+    @keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
         }
     }
 
@@ -447,3 +468,5 @@ body {
         }
     }
 }
+
+@import 'aboutRX';
