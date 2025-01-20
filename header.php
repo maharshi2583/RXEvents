@@ -41,7 +41,8 @@
                     <ul class="shadow-lg p-4">
                         <li class="nav-item"><a href="whyRX.php" class="nav-link text-uppercase orange-underline">Why
                                 Rx-Events</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Our
+                        <li class="nav-item"><a href="ourmanagement.php"
+                                class="nav-link text-uppercase orange-underline">Our
                                 Management</a></li>
                         <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Our
                                 Presence</a></li>
@@ -50,7 +51,8 @@
                 <li class="nav-item mx-xl-2 services">
                     <a href="#" class="nav-link text-uppercase">Services <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="shadow-lg p-4">
-                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Physical
+                        <li class="nav-item"><a href="physicalConferenceService.php"
+                                class="nav-link text-uppercase orange-underline">Physical
                                 Conference</a></li>
                         <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Virtual
                                 Conference</a></li>
@@ -70,15 +72,15 @@
                 <li class="nav-item mx-xl-2">
                     <a href="#" class="nav-link text-uppercase">Events <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="shadow-lg p-4">
-                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Physical
-                                Conference</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Virtual
-                                Conference</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Past
+                                Events</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Upcoming
+                                Events</a></li>
                     </ul>
                 </li>
-                <li class="nav-item mx-xl-2">
+                <!-- <li class="nav-item mx-xl-2">
                     <a class="nav-link text-uppercase" href="#">Resources</a>
-                </li>
+                </li> -->
                 <li class="nav-item mx-xl-2">
                     <a class="nav-link text-uppercase" href="#">Contact Us</a>
                 </li>

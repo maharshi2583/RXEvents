@@ -1,7 +1,75 @@
 @import 'variable';
 
-#breadcrums {
-    background-image: url('../images/breadcrumsbg.png');
+.our-piller-card {
+    border: 1px solid $orange;
+    transition: .3s all ease-in;
+
+    .card-body {
+        text-align: center;
+    }
+
+    .our-piller-title {
+        font-size: 2rem;
+
+        span {
+            font-size: 4rem;
+            font-weight: 900;
+            color: $orange;
+        }
+    }
+
+    &:hover {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-color: $cream;
+    }
+}
+
+.marquee {
+    width: 100%;
+    height: 12rem;
+    overflow: hidden;
+}
+
+.marquee__inner-wrap {
+    height: 100%;
+    width: 100%;
+}
+
+.marquee__img {
+    width: max(8rem, 12vw);
+    height: 8rem;
+    margin: 0 2vw;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    filter: grayscale(1);
+    transition: .3s all ease-in-out;
+
+    &:hover {
+        filter: grayscale(0);
+    }
+}
+
+.marquee__inner {
+    height: 100%;
+    width: fit-content;
+    align-items: center;
+    display: flex;
+    position: relative;
+    animation: marquee 30s linear infinite;
+    transition: .3s all ease-in;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+@keyframes marquee {
+    from {
+        trasnform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }

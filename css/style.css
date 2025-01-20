@@ -597,4 +597,76 @@ input[type=checkbox]:checked ~ .hamburger-lines .line3 {
   background-image: url("../images/breadcrumsbg.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.our-piller-card {
+  border: 1px solid #f26642;
+  transition: 0.3s all ease-in;
+}
+.our-piller-card .card-body {
+  text-align: center;
+}
+.our-piller-card .our-piller-title {
+  font-size: 2rem;
+}
+.our-piller-card .our-piller-title span {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #f26642;
+}
+.our-piller-card:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-color: #ffece5;
+}
+
+.marquee {
+  width: 100%;
+  height: 12rem;
+  overflow: hidden;
+}
+
+.marquee__inner-wrap {
+  height: 100%;
+  width: 100%;
+}
+
+.marquee__img {
+  width: max(8rem, 12vw);
+  height: 8rem;
+  margin: 0 2vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  transition: 0.3s all ease-in-out;
+}
+.marquee__img:hover {
+  filter: grayscale(0);
+}
+
+.marquee__inner {
+  height: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  display: flex;
+  position: relative;
+  animation: marquee 30s linear infinite;
+  transition: 0.3s all ease-in;
+}
+.marquee__inner:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    trasnform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.ourmanagement-card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border: 0;
 }/*# sourceMappingURL=style.css.map */

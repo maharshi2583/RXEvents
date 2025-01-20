@@ -469,4 +469,12 @@ body {
     }
 }
 
+#breadcrums {
+    background-image: url('../images/breadcrumsbg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 @import 'aboutRX';
+@import 'ourmanagement';
+@import 'services';
