@@ -1,0 +1,18 @@
+.contact-card {
+  background-color: #ffece5;
+  color: #1a1a1a;
+  transition: 0.3s all ease-in;
+}
+.contact-card .feature-i {
+  height: 60px;
+  min-width: 60px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: 0.3s all ease-in;
+}
+.contact-card:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.contact-card:hover .feature-i {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

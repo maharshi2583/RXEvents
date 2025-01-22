@@ -53,5 +53,10 @@
             <p class="text-center mb-0">Copyrights © 2019-2024 Rx Events Private Limited. All Rights Reserved. | Managed
                 by <a href="#">Tech-IT solutions</a></p>
         </div>
+        <div class="progress-wrap ps-0" tabindex="0" role="button">
+            <svg class="progress-circle svg-content" width="46px" height="46px" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
     </div>
 </div>

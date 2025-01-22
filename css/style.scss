@@ -15,6 +15,7 @@ body {
 @import 'header';
 @import 'footer';
 
+// general styling
 .btn-main {
     padding: 12px 16px;
     border-radius: 5px;
@@ -100,7 +101,7 @@ body {
     border-radius: 5px;
     background-color: $orange;
     color: $white;
-    border: 1px solid $white;
+    border: 1px solid $white !important;
 
     &:hover,
     &:focus {
@@ -236,6 +237,7 @@ body {
     }
 }
 
+// request a proposal
 #requestProposal {
 
     .accordion-button,
@@ -288,25 +290,31 @@ body {
     }
 }
 
-#flush-collapseOne {
-    .form-floating {
+// general form styling
+.form-floating {
 
-        input,
-        select,
-        textarea {
-            box-shadow: none;
-        }
+    input,
+    select,
+    textarea {
+        box-shadow: none !important;
 
-        textarea {
-            resize: none !important;
+        &:focus,
+        &:active {
+            border: 1px solid $orange;
         }
+    }
 
-        label {
-            color: $blackish;
-        }
+    textarea {
+        resize: none !important;
+        min-height: 8rem;
+    }
+
+    label {
+        color: $blackish;
     }
 }
 
+// our services home page
 .parallax {
     background: url('../images/ourservicesbg.jpg');
     background-attachment: fixed;
@@ -397,6 +405,7 @@ body {
     }
 }
 
+// service counting home page
 #services-counting {
     color: $orange;
     background-color: $white;
@@ -420,6 +429,7 @@ body {
     }
 }
 
+// upcoming home page
 #upcoming-events {
     background-image: url('../images/team-bg.jpg');
     background-repeat: no-repeat;
@@ -450,6 +460,7 @@ body {
     }
 }
 
+// follow us home page
 #follow-us {
     .orangebgdiv {
         background-color: $orange;
@@ -469,12 +480,100 @@ body {
     }
 }
 
+// general breadcrums
 #breadcrums {
     background-image: url('../images/breadcrumsbg.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+// back to top
+.progress-wrap {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    border-radius: 50px;
+    box-shadow: inset 0 0 0 2px $cream;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.progress-wrap.active-progress {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.progress-wrap::after {
+    position: absolute;
+    font-family: 'unicons';
+    content: '↑';
+    text-align: center;
+    line-height: 46px;
+    font-size: 24px;
+    color: $orange;
+    left: 0;
+    top: 0;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.progress-wrap:hover::after {
+    opacity: 0;
+}
+
+.progress-wrap::before {
+    position: absolute;
+    font-family: 'unicons';
+    content: '↑';
+    text-align: center;
+    line-height: 46px;
+    font-size: 24px;
+    opacity: 0;
+    color: $orange;
+    left: 0;
+    top: 0;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    z-index: 2;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.progress-wrap:hover::before {
+    opacity: 1;
+}
+
+.progress-wrap svg path {
+    fill: none;
+}
+
+.progress-wrap svg.progress-circle path {
+    stroke: $orange;
+    stroke-width: 4;
+    box-sizing: border-box;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+
+// other pages imports
 @import 'aboutRX';
 @import 'ourmanagement';
 @import 'services';
+@import 'contact';

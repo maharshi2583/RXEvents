@@ -54,15 +54,20 @@
                         <li class="nav-item"><a href="physicalConferenceService.php"
                                 class="nav-link text-uppercase orange-underline">Physical
                                 Conference</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Virtual
+                        <li class="nav-item"><a href="virtualConferenceService.php"
+                                class="nav-link text-uppercase orange-underline">Virtual
                                 Conference</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Hybrid
+                        <li class="nav-item"><a href="hybridConferenceService.php"
+                                class="nav-link text-uppercase orange-underline">Hybrid
                                 Conference</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Speaker
+                        <li class="nav-item"><a href="contactus.php"
+                                class="nav-link text-uppercase orange-underline">Speaker
                                 Presentation</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Content
+                        <li class="nav-item"><a href="contactus.php"
+                                class="nav-link text-uppercase orange-underline">Content
                                 Writing</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Image
+                        <li class="nav-item"><a href="contactus.php"
+                                class="nav-link text-uppercase orange-underline">Image
                                 Consulting</a></li>
                     </ul>
                 </li>
@@ -82,10 +87,10 @@
                     <a class="nav-link text-uppercase" href="#">Resources</a>
                 </li> -->
                 <li class="nav-item mx-xl-2">
-                    <a class="nav-link text-uppercase" href="#">Contact Us</a>
+                    <a class="nav-link text-uppercase" href="contactus.php">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase btn btn-main px-3 bookADemo" href="#">Book
+                    <a class="nav-link text-uppercase btn btn-main px-3 bookADemo" href="bookADemo.php">Book
                         A Demo</a>
                 </li>
             </ul>

@@ -1,0 +1,23 @@
+@import 'variable';
+
+.contact-card {
+    background-color: $cream;
+    color: $blackish;
+    transition: .3s all ease-in;
+
+    .feature-i {
+        height: 60px;
+        min-width: 60px;
+        border-radius: 50%;
+        background-color: $white;
+        transition: .3s all ease-in;
+    }
+
+    &:hover {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        .feature-i {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+    }
+}
