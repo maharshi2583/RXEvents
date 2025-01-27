@@ -785,4 +785,12 @@ input[type=checkbox]:checked ~ .hamburger-lines .line3 {
 }
 .contact-card:hover .feature-i {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#gallery .card {
+  transition: 0.1s all ease-in;
+}
+#gallery .card:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+  transform: scale(1.02);
 }/*# sourceMappingURL=style.css.map */

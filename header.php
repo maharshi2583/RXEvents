@@ -72,7 +72,7 @@
                     </ul>
                 </li>
                 <li class="nav-item mx-xl-2">
-                    <a class="nav-link text-uppercase" href="#">Gallery</a>
+                    <a class="nav-link text-uppercase" href="gallery.php">Gallery</a>
                 </li>
                 <li class="nav-item mx-xl-2">
                     <a href="#" class="nav-link text-uppercase">Events <i class="fa-solid fa-caret-down"></i></a>

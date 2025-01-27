@@ -12,6 +12,8 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
 <!-- AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- fancybox js -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 <script>
 AOS.init();
 
@@ -115,6 +117,18 @@ const swiper = new Swiper('.swiper', {
                     text.style.animation = 'fadeInLeft 1s ease-in-out forwards';
                 }, 1); // Small delay ensures the animation re-triggers
             });
+        },
+    },
+});
+
+// gallery fancybox
+Fancybox.bind("[data-fancybox]", {
+    hideScrollbar: true,
+    Toolbar: {
+        display: {
+            left: [],
+            middle: ["prev", "infobar", "next"],
+            right: ["close"],
         },
     },
 });
