@@ -56,6 +56,30 @@ $(document).ready(function() {
     });
 });
 
+// jQuery for fetching upcoming evnets
+$(document).ready(function() {
+    loadTable();
+
+    function loadTable() {
+        // $.ajax({
+        //     url: 'https://www.rx-events.live/rx-panel/events-data-action-request.php',
+        //     method: 'GET',
+        //     success: function(response) {
+        //         if (response.success) {
+        //             response.events_data.forEach((event, index) => {
+        //                 console.log(event);
+        //             });
+        //         } else {
+        //             console.log("Failed to load data");
+        //         }
+        //     },
+        //     error: function(xhr, status, error) {
+        //         console.log("Failed to load data : ", error);
+        //     }
+        // });
+    }
+});
+
 // upcoming carousel
 $(document).ready(function() {
     $(".owl-carousel").owlCarousel();

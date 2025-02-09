@@ -21,11 +21,13 @@ body {
     border-radius: 5px;
     background-color: $orange;
     color: $white;
+    border: 1px solid $orange;
 
     &:hover,
     &:focus {
         background-color: $white;
         color: $orange;
+        border-color: unset;
     }
 }
 

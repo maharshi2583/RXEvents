@@ -225,62 +225,14 @@
                     <div class="carousel-wrap">
                         <div class="owl-carousel">
                             <div class="item">
-                                <div class='card card1'>
-                                    <div class="price">
-                                        <h6>$14</h6>
-                                    </div>
-                                    <div class='info text-white'>
-                                        <h1 class='title mx-3'>Chocolate Cake</h1>
-                                        <p class='description mx-3'>Lorem ipsum dolor sit amet, consectetur
-                                            adipiscing
-                                            elit,
-                                            sedii do
-                                            eiusmod teme.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class='card card1'>
-                                    <div class="price">
-                                        <h6>$14</h6>
-                                    </div>
-                                    <div class='info text-white'>
-                                        <h1 class='title mx-3'>Chocolate Cake</h1>
-                                        <p class='description mx-3'>Lorem ipsum dolor sit amet, consectetur
-                                            adipiscing
-                                            elit,
-                                            sedii do
-                                            eiusmod teme.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class='card card1'>
-                                    <div class="price">
-                                        <h6>$14</h6>
-                                    </div>
-                                    <div class='info text-white'>
-                                        <h1 class='title mx-3'>Chocolate Cake</h1>
-                                        <p class='description mx-3'>Lorem ipsum dolor sit amet, consectetur
-                                            adipiscing
-                                            elit,
-                                            sedii do
-                                            eiusmod teme.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class='card card1'>
-                                    <div class="price">
-                                        <h6>$14</h6>
-                                    </div>
-                                    <div class='info text-white'>
-                                        <h1 class='title mx-3'>Chocolate Cake</h1>
-                                        <p class='description mx-3'>Lorem ipsum dolor sit amet, consectetur
-                                            adipiscing
-                                            elit,
-                                            sedii do
-                                            eiusmod teme.</p>
+                                <div class='card'>
+                                    <img src="images/hybridConferenceIntro.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h4 class="card-title mainheading mb-2">Event Name</h4>
+                                        <p class="mb-1"><i class="fa-solid fa-calendar-days orangetext"></i> Event Date
+                                        </p>
+                                        <p><i class="fa-solid fa-location-dot orangetext"></i> Event Location</p>
+                                        <a href="#" class="btn btn-main mx-auto">Register Now</a>
                                     </div>
                                 </div>
                             </div>

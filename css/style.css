@@ -226,10 +226,12 @@ input[type=checkbox]:checked ~ .hamburger-lines .line3 {
   border-radius: 5px;
   background-color: #f26642;
   color: #ffffff;
+  border: 1px solid #f26642;
 }
 .btn-main:hover, .btn-main:focus {
   background-color: #ffffff;
   color: #f26642;
+  border-color: unset;
 }
 
 .btn-animated-main {
