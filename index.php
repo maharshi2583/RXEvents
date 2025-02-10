@@ -223,20 +223,7 @@
             <div class="row justify-content-center">
                 <div class="col-10">
                     <div class="carousel-wrap">
-                        <div class="owl-carousel">
-                            <div class="item">
-                                <div class='card'>
-                                    <img src="images/hybridConferenceIntro.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h4 class="card-title mainheading mb-2">Event Name</h4>
-                                        <p class="mb-1"><i class="fa-solid fa-calendar-days orangetext"></i> Event Date
-                                        </p>
-                                        <p><i class="fa-solid fa-location-dot orangetext"></i> Event Location</p>
-                                        <a href="#" class="btn btn-main mx-auto">Register Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="owl-carousel upcoming-carousel" id="upcoming-events"></div>
                     </div>
                 </div>
             </div>
