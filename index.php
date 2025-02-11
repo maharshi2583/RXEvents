@@ -255,6 +255,7 @@
     <!-- footer -->
     <?php include 'footer.php'; ?>
     <?php include 'javascripts.php'; ?>
+    <script src="upcomingEventsIndex.js"></script>
 </body>
 
 </html>

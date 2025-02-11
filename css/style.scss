@@ -475,6 +475,25 @@ body {
     }
 }
 
+#event-container {
+    .card {
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .event-img-container {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        border: 1px solid $orange;
+        border-radius: 5px;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
 // follow us home page
 #follow-us {
     .orangebgdiv {

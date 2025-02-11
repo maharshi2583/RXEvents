@@ -598,6 +598,22 @@ input[type=checkbox]:checked ~ .hamburger-lines .line3 {
   border-radius: 5px;
 }
 
+#event-container .card {
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+#event-container .event-img-container {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #f26642;
+  border-radius: 5px;
+}
+#event-container .event-img-container img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 #follow-us .orangebgdiv {
   background-color: #f26642;
   padding: 5rem;
