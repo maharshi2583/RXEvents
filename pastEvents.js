@@ -42,8 +42,6 @@ $(document).ready(function () {
             const date = event.date == "" ? "Not announced" : event.date;
             const location =
               event.location == "" ? "Not announced" : event.location;
-            const link =
-              event.registration_link == null ? "#" : event.registration_link;
 
             const item = `
                 <div class="item">
@@ -53,7 +51,6 @@ $(document).ready(function () {
                             <h4 class="card-title mainheading mb-2">${title}</h4>
                             <p class="mb-1"><i class="fa-solid fa-calendar-days orangetext"></i> ${date}</p>
                             <p><i class="fa-solid fa-location-dot orangetext"></i> ${location}</p>
-                            <a href="${link}" class="btn btn-main mx-auto">Register Now</a>
                         </div>
                     </div>
                 </div>
