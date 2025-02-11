@@ -77,9 +77,11 @@
                 <li class="nav-item mx-xl-2">
                     <a href="#" class="nav-link text-uppercase">Events <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="shadow-lg p-4">
-                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Past
+                        <li class="nav-item"><a href="pastEvent.php"
+                                class="nav-link text-uppercase orange-underline">Past
                                 Events</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-uppercase orange-underline">Upcoming
+                        <li class="nav-item"><a href="upcomingEvent.php"
+                                class="nav-link text-uppercase orange-underline">Upcoming
                                 Events</a></li>
                     </ul>
                 </li>

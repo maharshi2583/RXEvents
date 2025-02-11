@@ -217,13 +217,14 @@
                     <h1 class="mainheading">Upcoming Events</h1>
                 </div>
                 <div class="col-md-6 d-flex align-items-center justify-content-end">
-                    <a href="#" class="btn btn-animated-main"><span>See All Events</span></a>
+                    <a href="upcomingEvent.php" class="btn btn-animated-main"><span>See All Events</span></a>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-10">
+                    <h3 class="orangetext text-center event-placeholder" role="alert">Loading Events...</h3>
                     <div class="carousel-wrap">
-                        <div class="owl-carousel upcoming-carousel" id="upcoming-events"></div>
+                        <div class="owl-carousel upcoming-carousel d-none" id="upcoming-events"></div>
                     </div>
                 </div>
             </div>

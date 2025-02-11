@@ -440,6 +440,11 @@ input[type=checkbox]:checked ~ .hamburger-lines .line3 {
   border-radius: 15px;
   transition: 0.1s opacity ease-in-out;
 }
+@media only screen and (max-width: 370px) {
+  #requestProposal #closed {
+    left: 6px;
+  }
+}
 #requestProposal .accordion-button:not(.collapsed) #closed {
   opacity: 0;
 }
@@ -567,7 +572,6 @@ input[type=checkbox]:checked ~ .hamburger-lines .line3 {
 #upcoming-events {
   background-image: url("../images/team-bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
 }
 #upcoming-events .carousel-wrap {
   position: relative;
@@ -587,6 +591,11 @@ input[type=checkbox]:checked ~ .hamburger-lines .line3 {
 }
 #upcoming-events .carousel-wrap .owl-nav .owl-next {
   margin-right: -2rem;
+}
+
+.event-card img {
+  border: 1px solid #f26642;
+  border-radius: 5px;
 }
 
 #follow-us .orangebgdiv {

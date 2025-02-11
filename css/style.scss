@@ -281,6 +281,12 @@ body {
         left: 8.1px;
         border-radius: 15px;
         transition: .1s opacity ease-in-out;
+
+        @media only screen and (max-width: 370px) {
+            & {
+                left: 6px;
+            }
+        }
     }
 
     .accordion-button:not(.collapsed) #closed {
@@ -435,7 +441,7 @@ body {
 #upcoming-events {
     background-image: url('../images/team-bg.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    // background-size: cover;
 
     .carousel-wrap {
         position: relative;
@@ -459,6 +465,13 @@ body {
                 margin-right: -2rem;
             }
         }
+    }
+}
+
+.event-card {
+    img {
+        border: 1px solid $orange;
+        border-radius: 5px;
     }
 }
 

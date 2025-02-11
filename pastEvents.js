@@ -1,10 +1,34 @@
-// jQuery for fetching upcoming evnets
+//! past carousel
+$(document).ready(function () {
+  $(".past-carousel").owlCarousel();
+});
+$(".past-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  navText: [
+    '<i class="fa-solid fa-less-than"></i>',
+    '<i class="fa-solid fa-greater-than"></i>',
+  ],
+  autoplay: true,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 3,
+    },
+  },
+});
+
+//! jQuery for fetching past evnets
 $(document).ready(function () {
   loadTable();
 
   function loadTable() {
     $.ajax({
-      url: "https://www.rx-events.live/rx-panel/events-data-action-request.php?filter=upcoming",
+      url: "https://www.rx-events.live/rx-panel/events-data-action-request.php?filter=past",
       method: "GET",
       success: function (response) {
         if (response.success) {
@@ -35,13 +59,13 @@ $(document).ready(function () {
                 </div>
             `;
 
-            $(".upcoming-carousel")
+            $(".past-carousel")
               .trigger("add.owl.carousel", [item])
               .trigger("refresh.owl.carousel");
-
-            $(".event-placeholder").addClass("d-none");
-            $(".upcoming-carousel").removeClass("d-none");
           });
+
+          $(".event-placeholder").addClass("d-none");
+          $(".past-carousel").removeClass("d-none");
         } else {
           console.log("Failed to load data");
         }
